@@ -2,6 +2,8 @@ import './App.css';
 import { Link, Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { BookList } from './pages/BookList';
+import { Book } from './pages/Book'
+import { NewBook } from './pages/NewBook'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/books" element={<BookList />} />
+        <Route path="/books/:id" element={<Book />} />
+        <Route path="/books/new" element={<NewBook />} />
         <Route path="/hi" element={<h1>Hi</h1>} />
       </Routes>
     </>
