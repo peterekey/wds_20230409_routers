@@ -4,6 +4,7 @@ import { Home } from './pages/Home';
 import { BookList } from './pages/BookList';
 import { Book } from './pages/Book'
 import { NewBook } from './pages/NewBook'
+import { NotFound } from './pages/NotFound'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/books/:id" element={<Book />} />
         <Route path="/books/new" element={<NewBook />} />
         <Route path="/hi" element={<h1>Hi</h1>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
