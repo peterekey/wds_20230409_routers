@@ -6,14 +6,14 @@ export function NotFound() {
     
     useEffect(() => {
         setTimeout(() => {
-            navigate("/")
+            navigate(-1)
         }, 1000);
     }, []);
 
     return (
         <>
             <h1>NotFound</h1>
-            <p>Redirecting in a sec...</p>
+            <p>Going back one page in a sec...</p>
         </>
     )
 }
