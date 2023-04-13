@@ -45,7 +45,7 @@ function App() {
     <> 
       <nav>
             <ul>
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/" replace>Home</Link></li>
             <li><Link to="about" element={<About />}>About</Link></li>
             <li><Link to="/books">Books</Link></li>
             <li><Link to="/hi">Say hi</Link></li>
