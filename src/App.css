@@ -1,3 +1,11 @@
+a.activeClass:hover {
+  background-color: lime
+}
+
+.active {
+  color: pink;
+}
+
 .App {
   text-align: center;
 }
